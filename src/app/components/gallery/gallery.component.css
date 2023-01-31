@@ -1,0 +1,78 @@
+.page{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.galleryContainer{
+    margin: auto;
+    width: 70%;
+    height: 80%;
+    overflow: hidden;
+    display: flex;    
+    flex-direction: column;
+}
+
+.bigPic{
+    margin: auto;
+    padding: 0;
+    width: 80%;
+    height: 70%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.bigPic img{
+    margin: auto;
+    width: 90%;
+    height: 90%;
+    object-fit:contain;
+    padding: 2px;
+    cursor: pointer;
+}
+
+.arrowL, .arrowR{
+    font-size: 46px;
+    font-weight: 800;
+    margin: 0.5vw;
+    opacity: 0.4;
+    cursor: pointer;
+}
+
+
+.thumbs{
+    height: 30%;
+    width: 98%;
+    display: flex;
+
+}
+
+.thumbContainer{
+    margin: 0.4vw;
+    opacity: 0.5;
+}
+
+.thumbContainer img{
+    margin: auto;
+    padding: 3px;
+    width: 100%;
+    height: 100%;
+    object-fit:contain;
+    cursor: pointer;
+    transition: transform .3s ease;
+
+}
+
+.thumbContainer img:hover{
+    transform: scale(1.11); 
+
+}
+
+.activeThumbFocus{
+    opacity: 1;
+}
